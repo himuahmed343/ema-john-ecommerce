@@ -9,3 +9,8 @@
     margin: 0 5px 0 50px;
     /* border-right: 2px solid lightgray; */
 }
+
+.cart-container{
+    text-align: center;
+    width: 30%;
+}
