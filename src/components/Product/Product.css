@@ -11,7 +11,11 @@
     color: blue;
 }
 
-.product-img{
+.product-name a{
+    text-decoration: none;
+
+}.product-name a:focus{
+    color: #000;
 
 }
 

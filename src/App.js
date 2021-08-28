@@ -4,6 +4,9 @@ import Header from './components/Header/Header.js';
 import Shop from './components/Shop/Shop.js';
 import Review from './components/Review/Review.jsx';
 import Manage from './components/Manage/Manage.jsx';
+import NotFound from './components/NotFound/NotFound';
+import ProdDetails from './components/ProdDetails/ProdDetails';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,9 +34,19 @@ function App() {
             <Manage></Manage>
           </Route>
           
-          <Route path="/">
+          <Route exact path="/">
             <Shop></Shop>
           </Route>
+
+          <Route path="/product/:productKey">
+            <ProdDetails></ProdDetails>
+          </Route>
+
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+
+          
 
 
         </Switch>
