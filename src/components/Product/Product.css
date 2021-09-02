@@ -4,6 +4,13 @@
     margin: 10px 10px 10px 30px;
     padding-bottom: 10px;
 }
+.product-img{
+    position: relative;
+    padding: 30px;
+}
+.product-img img { 
+    display: block;
+}
 .product-name{
     font-size: 20px;
     line-height: 28px;
@@ -31,4 +38,18 @@ height: 30px;
 border: 1px solid darkgray;
 border-radius: 5px;
 cursor: pointer;
+}
+
+.icon-group{
+    position: absolute; 
+    bottom:0; 
+    left:0;
+}
+button.MuiButtonBase-root.MuiIconButton-root{
+    height: 50px;
+}
+
+
+button.MuiButtonBase-root.MuiIconButton-root.heart.active {
+    color: red;
 }
